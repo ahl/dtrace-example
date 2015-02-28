@@ -92,7 +92,7 @@ main(int argc, char **argv)
 		    dtrace_errmsg(NULL, err));
 	}
 
-	if(dtrace_setopt(g_dtp, "bufsize", "1k") == -1)
+	if (dtrace_setopt(g_dtp, "bufsize", "1k") == -1)
 		ddie("failed to set 'bufsize'");
 
 	dtrace_prog_t *prog;
